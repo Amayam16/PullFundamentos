@@ -29,7 +29,37 @@ Al no existir un canal directo de comunicación, los reportes se atienden con re
 
 ---
 
-<!-- PARTE YUSEFF -->
+## 3. Definición del alcance
+
+### Elementos incluidos (dentro del alcance)
+
+- **Autenticación y control de acceso:** inicio de sesión con distinción de roles (alumno y personal encargado).
+- **Creación de reportes:** formulario para reportar una falla vinculada a un activo registrado.
+- **Suma a reportes existentes:** el alumno puede adherirse a un reporte ya creado, y la prioridad aumenta según el número de alumnos que lo respaldan.
+- **Seguimiento de estado:** cada reporte mostrará su estado (*recibido*, *en revisión*, *buscando solución*, *a punto de resolverse*, *resuelto*).
+- **Base de datos:** persistencia de usuarios, activos y reportes en [MySQL / MongoDB / Supabase: elijan una].
+- **Entorno de ejecución y despliegue:** desarrollo en localhost y despliegue de prueba en un servicio de nube de nivel gratuito [especificar cuál].
+- **Interfaz web responsiva** y amigable.
+- **Control de versiones** con GitHub y desarrollo en Visual Studio Code.
+
+### Elementos no incluidos (fuera del alcance)
+
+**1. Integración con Microsoft Teams**
+
+- *¿Por qué queda fuera?* Depende de los permisos de la institución y de las políticas de la plataforma, lo que excede la experiencia y el tiempo del equipo.
+- *¿Qué se requeriría?* Autorización del área de TI para registrar una aplicación en Microsoft 365, uso de la API Microsoft Graph y conocimientos de autenticación OAuth 2.0.
+
+**2. Notificaciones automáticas a los alumnos**
+
+- *¿Por qué queda fuera?* Implica trabajo adicional a las funciones principales.
+- *¿Qué se requeriría?* Un servicio de envío de correo o mensajería (por ejemplo, SMTP o una API externa) y programación de eventos.
+
+**3. Infraestructura propia y alta disponibilidad**
+
+- *¿Por qué queda fuera?* El equipo no cuenta con presupuesto ni instalaciones para un servidor físico, por lo que se usará un servicio en la nube de nivel gratuito.
+- *¿Qué se requeriría?* Servidor dedicado o plan de nube de pago, dominio propio, certificado SSL, respaldos automáticos y monitoreo.
+
+Como no se usarán funciones externas, **no será necesario el uso de APIs externas** en esta etapa.
 
 ---
 
