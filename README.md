@@ -63,4 +63,16 @@ Como no se usarán funciones externas, **no será necesario el uso de APIs exter
 
 ---
 
-<!-- PARTE JADIEL -->
+## 4. Distribución de actividades y responsabilidades
+
+| Integrante | Rol principal | Tecnologías | Responsabilidades específicas |
+|---|---|---|---|
+| Jadiel Ernesto | Backend Developer | [Node.js u otra] | • Desarrollo del servidor.<br>• Endpoints para registro de usuarios y creación y actualización de reportes.<br>• Seguridad, autenticación y control de accesos por rol. |
+| Yuseff Farah | Frontend Developer | HTML5, CSS3, JavaScript | • Diseño de interfaz responsiva y amigable.<br>• Conexión de las interfaces con el backend para mostrar la información en tiempo real. |
+| Amairani Pacheco | Base de datos e infraestructura | [MySQL / MongoDB / Supabase] | • Diseño y estructura de la base de datos y sus esquemas.<br>• Integridad de la información de usuarios y activos.<br>• Despliegue y mantenimiento del servidor en línea. |
+
+## 5. Organización y coordinación del equipo
+
+- **Gestión de versiones (GitHub):** repositorio central, rama `main` para versiones estables y una rama por integrante. Cuando la parte de cada uno esté completa y funcional, se integra a `main` mediante Pull Request.
+- **Reuniones de sincronización:** [frecuencia y duración] para revisar avances y resolver bloqueos de integración.
+- **Canal de comunicación:** [WhatsApp / Teams / Discord] para dudas rápidas y seguimiento de tareas.
